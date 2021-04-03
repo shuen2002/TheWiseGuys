@@ -1,0 +1,517 @@
+body
+{
+    background-color: black;
+    font-family: "Franklin Gothic Medium";
+    color: white;
+    margin-bottom: 100px;
+    min-height: 400px;
+
+}
+nav
+{
+    background-color: rgb(255, 255, 123);
+    height: 1cm;
+    font-family: Arial;
+    font-weight: bold;
+    width: 18cm;
+    text-align: center;
+
+}
+
+a:link{color: white; text-decoration: none;}
+a:hover{color: red;}
+a:visited{color: black;}
+
+mark{color: white; background-color: black;}
+
+h1
+{
+    font-size: 30pt;
+    background-color: rgb(253, 82, 52);
+    margin: 0%;
+    height: 8cm;
+    font-family: Arial;
+    text-align: center;
+
+}
+h2
+{
+    background-color: tomato;
+    font-size: 20pt;
+    font-family: Arial;
+    text-align: center;
+}
+footer
+{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 174, 160);
+    color: black;
+    text-align: center;
+    font-size: .6em;
+    font-style:italic;
+    font-family: Arial;
+    padding-bottom:10px; 
+	  border-top:1px solid #221811;
+
+}
+
+.pricebox
+{
+  background-color: red; 
+  margin: auto; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 150%; 
+  font-weight: bold; 
+  text-align: center;
+}
+  
+.boxes
+{
+    float: left;
+    width: 500px;
+    padding: 5px;
+    border: 2px solid red;
+    background-color: tomato;
+}
+
+.center
+ {
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+  }
+
+  th
+  {
+    width: 490px;
+    text-align: center;
+    background-color: tomato;
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 14pt;
+  }
+
+.homeH1BG{background-image: url(images/Wiseguy.jpg); opacity: 1; background-position: center;}
+
+/* Dropdown Button */
+.navbar {
+  font-family: Arial;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  font-family: Arial;
+  font-weight: bold;
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  font-family: Arial;
+  font-weight: bold;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-weight: bold;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  font-family: Arial;
+  font-weight: bold;
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: Arial;
+  font-weight: bold;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  position: relative;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Button styling*/
+.btnContainer{
+  text-align: center;
+  margin-top: auto;
+}
+
+.btn{
+  border: 1px solid orange;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: Arial;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hov{
+  color: black;
+  background-color: coral;
+}
+
+.hov:hover{
+  color: #fff;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.hov::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.hov:hover::before{
+  height: 180%;
+}
+
+/*Cart*/
+.select{
+  width: 60%;
+  height: 580px;
+  padding: 5%;
+  background: #222;
+  position: absolute;
+  top: -1000px;
+  left: 20%;
+  transition: 0.5s;
+  overflow-y: auto;
+  margin: auto;
+}
+.select.display{
+  top: 10px;
+}
+.select div{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding: 5px;
+  border: 1px solid white;
+  position: relative;
+  margin: 5px auto;
+}
+.select div img{
+  width: 300px;
+  height: 100%;
+}
+.select div p{
+  padding: 35px;
+  color: white;
+}
+.select div h6,
+.select div button{
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  color: white;
+}
+.select div button{
+  left: 60%;
+  top: 55%;
+}
+.select div span{
+  display: none;
+}
+section div:nth-child(1)>span.active{
+  animation: first 0.5s ease-in;
+  z-index: 2;
+  display: block;
+
+}
+section div:nth-child(2)>span.active{
+  animation: second 0.5s ease-in;
+  z-index: 2;
+  display: block;
+
+}
+section div:nth-child(3)>span.active{
+  animation: third 0.5s ease-in;
+  z-index: 2;
+  display: block;
+
+}
+section div:nth-child(4)>span.active{
+  animation: four 0.5s ease-in;
+  z-index: 2;
+  display: block;
+
+}
+@keyframes first{
+  to{
+    width: 30px;
+      height: 20px;
+      left: 1290px;
+      top: -70px;
+  }
+}
+@keyframes second{
+  to{
+    width: 30px;
+      height: 20px;
+      left: 948px;
+      top: -70px;
+  }
+}
+@keyframes third{
+  to{
+    width: 30px;
+      height: 20px;
+      left: 606px;
+      top: -70px;
+  }
+}
+@keyframes four{
+  to{
+    width: 30px;
+      height: 20px;
+      left: 265px;
+      top: -70px;
+  }
+}
+/*H3-ShoppingCart*/
+.header{
+  
+  background: #555;
+  color: #f1f1f1;
+}

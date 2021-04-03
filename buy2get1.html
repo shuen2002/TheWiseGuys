@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Wise Guys- Promotions- Buy 1 Get 1 Free</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="WiseGuys.css">
+        <link rel="shortcut icon" href="images/cheeseburger.ico" type="image/x-icon">
+        <style>@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');</style>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navbar">      
+               <a href="index.html">Home</a>
+               <div class="dropdown">
+                 <button class="dropbtn">Menu 
+                   <i class="fa fa-caret-down"></i>
+                 </button>
+                 <div class="dropdown-content">
+                   <a href="menu.html">Menu</a>
+                   <a href="specials.html">Specials</a>
+                 </div>
+               </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="delivery.html">Delivery</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">About Us</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+
+        <h1 class="homeH1BG"><br><br><br><mark>THE WISE GUYS</mark></h1>
+        <h2 class="center">BUY 2 GET 1 FREE</h2>
+        
+        <div style="width:85%; background-color:salmon; margin: auto;">
+            <!-- Slideshow container -->
+            <div class="slideshow-container" style="width:65%;">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides">
+                    <img src="images/Buy2Free1-1.png" alt="Buy 2 sets get 1 free side" style="height:600px; width:100%;">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="images/Buy2Free1-2.jpg" alt="Buy 2 get 1 free sample image 1" style="height:600px; width:100%;">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="images/Buy2Get1-3.jpg" alt="Buy 2 get 1 free sample image 2" style="height:600px; width:100%;">
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+            
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+            
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+            
+        function showSlides(n) 
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            {
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";
+                }
+                
+                for (i = 0; i < dots.length; i++) 
+                {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+            }
+        }
+        </script>
+                <div style="width:75%; margin:auto; font-size:125%; text-align: center;">
+                    <p>
+                        Sometimes, you just can't get enough and you feel like eating more...<br>
+                        Introducing this amazing promo - BUY 2 SETS, FREE 1 SIDE!<br>
+                        Yes, it's as good as it sounds... applicable only for dine-ins on weekends!
+                    </p>
+                </div>
+        <br>
+
+        <footer>
+            <p>
+                Copyright &copy; 2021 The Wise Guys<br>
+                <a href="mailto:atib908@gmail.com">TheWiseGuys@gmail.com</a>
+            </p>
+        </footer>
+    </body>
+</html>

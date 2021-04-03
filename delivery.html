@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wise Guys- Delivery</title>
+    <link rel="shortcut icon" href="images/cheeseburger.ico" type="image/x-icon">
+    <style>
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        body{
+            background: salmon;
+        }
+        h3{
+		width: 3%;
+	    position: relative;
+	    top: 60px;
+	    left: 90%;
+	    cursor: pointer;
+	}
+	    h3:before{
+		content: attr(data-count);
+	    color: white;
+	    position: absolute;
+	    right: 16px;
+	    font-size: 15px;
+	    text-align: center;
+	    top: -12px;
+	    width: 20px;
+	    height: 20px;
+	    background: red;
+	    border-radius: 50%;
+	    opacity: 0;
+	}
+	h3.zero:before{
+		opacity: 1;
+	}
+        section{
+            width: 90%;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            margin: 100px auto;
+            
+        }
+        section div{
+            width: 22%;
+            height: 93%;
+            background: tomato;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+        section div span{
+            position: absolute;
+            top: 14px;
+            left: 13px;
+            width: 300px;
+            height: 186px;
+            display: none;
+        }
+        section div span img{
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            padding: 5px;
+            font-weight: bold;
+        }
+        img{
+            height: 186px;
+            width: 294px;
+        }
+        p{
+            margin: 5px;
+        }
+        h6{
+            width: 50px;
+            padding: 5px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="WiseGuys.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">      
+            <a href="index.html">Home</a>
+           <div class="dropdown">
+                <button class="dropbtn">Menu 
+                   <i class="fa fa-caret-down"></i>
+                </button>
+               <div class="dropdown-content">
+                   <a href="menu.html">Menu</a>
+                   <a href="specials.html">Specials</a>
+               </div>
+           </div>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="delivery.html">Delivery</a> 
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">About Us</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
+       </div>
+    </nav>
+    
+    <h1 class="homeH1BG"><br><br><br><mark>THE WISE GUYS</mark></h1>
+    
+            <h2 class="center">DELIVERY MENU</h2>
+            <br>
+            
+            <div class="header" id="head">
+                <h3>
+                    <i class="fa fa-shopping-cart">.</i>
+                </h3>
+                <br>
+                
+                    <form style="text-align: right;">
+                    <button class="btn hov" formaction="deliveryP.html">Proceed</button>
+                    </form>
+                
+            </div>
+            <br>
+            <h2 class="center">SPECIALS</h2>
+    <section>
+        <div>
+            <img src="images/MealSet1.jpg" alt="MealSet1">
+            <p>Limited Time Nasi Lemak Burger Meal Set</p>
+            <h6>RM20.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/OldSchoolSet2.jpg" alt="OldSchoolSet2">
+            <p>Limited Time Old School Meal Set</p>
+            <h6>RM21.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/BuffaloSet3.jpg" alt="BuffaloSet3">
+            <p>Limited Time Buffalo Burger Meal Set</p>
+            <h6>RM25.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+    </section>
+            <h2 class="center">A LA CARTE</h2>
+
+            <section>
+                <div>
+                    <img src="images/angus1.JPG" alt="Angus">
+                    <p>Angus Beef Burger</p>
+                    <h6>RM30.00</h6>
+                    <span></span>
+                    <button class="btn hov add add">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/takoyaki1.JPG" alt="takoyaki">
+                    <p>Loaded Takoyaki Fries</p>
+                    <h6>RM20.00</h6>
+                    <span></span>
+                    <button class="btn hov add add">Add to Cart</button>
+                </div> 
+                <div>
+                    <img src="images/wings1.jpg" alt="wings1">
+                    <p>Authentic Buffalo Wings</p>
+                    <h6>RM25.00</h6>
+                    <span></span>
+                    <button class="btn hov add add">Add to Cart</button>
+                </div>       
+            </section>
+    <section>
+        <div>
+            <img src="images/PulledPork.jpg" alt="PulledPork">
+            <p>Pulled Pork Burger</p>
+            <h6>RM14.00</h6>
+            <span></span>
+            <button class="btn hov add add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/BeefBurger.jpg" alt="BeefBurger">
+            <p>Beef Burger</p>
+            <h6>RM13.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/ChickenBurger.jpg" alt="ChickenBurger">
+            <p>Chicken Burger</p>
+            <h6>RM10.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/PorkKatsu.jpg" alt="PorkKatsu">
+            <p>Pork Cutlet Burger</p>
+            <h6>RM20.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+    </section >
+    <h2 class="center">SIDES & BEVERAGES</h2>
+    <section>
+        <div>
+            <img src="images/FrenchFries.jpg" alt="FrenchFries">
+            <p>French Fries</p>
+            <h6>RM8.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/MashedPotatoes.jpg" alt="MashedPotatoes">
+            <p>Mashed Potatoes</p>
+            <h6>RM6.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/Coleslaw.jpg" alt="Coleslaw">
+            <p>Coleslaw</p>
+            <h6>RM6.00</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="images/CocaCola.jpg" alt="CocaCola">
+            <p>Coca Cola</p>
+            <h6>RM2.50</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/Pepsi.jpg" alt="Pepsi">
+            <p>Pepsi</p>
+            <h6>RM2.50</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div> 
+        <div>
+            <img src="images/Sprite.jpg" alt="Sprite">
+            <p>Sprite</p>
+            <h6>RM2.50</h6>
+            <span></span>
+            <button class="btn hov add">Add to Cart</button>
+        </div>       
+    </section>
+    <div class="select">
+
+    </div>
+    
+    <footer>
+        <p>
+            Copyright &copy; 2021 The Wise Guys<br>
+            <a href="mailto:atib908@gmail.com">TheWiseGuys@gmail.com</a>
+        </p>
+    </footer>
+    <script>
+        var noti = document.querySelector('h3');
+        var select = document.querySelector('.select');
+        var button = document.getElementsByClassName('add');
+        for(but of button)
+        {
+            but.addEventListener('click', (e)=>{
+                var add = Number(noti.getAttribute('data-count')|| 0);
+                noti.setAttribute('data-count', add + 1);
+                noti.classList.add('zero')
+    
+                var parent = e.target.parentNode;
+                var clone = parent.cloneNode(true);
+                select.appendChild(clone);
+                
+                clone.lastElementChild.innerText = "";
+                if (clone){
+                    noti.onclick =()=>{
+                        select.classList.toggle('display');
+                    }
+                }
+               
+    
+                var image = e.target.parentNode.querySelector('img');
+                var span = e.target.parentNode.querySelector('span');
+                var s_image = image.cloneNode(false);
+                span.appendChild(s_image);
+                span.classList.add("active");
+                setTimeout(()=>{
+                    span.classList.remove("active");
+                    span.removeChild(s_image);
+                }, 500); 
+            })
+        }
+    
+    
+        
+    </script>
+</body>
+
+</html>
+
